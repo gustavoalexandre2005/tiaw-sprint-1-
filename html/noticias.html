@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias</title>
+  <link rel="stylesheet" href="../css/noticias.css">
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <nav class="menu">
+      <a href="#">Início</a>
+    </nav>
+    <div class="dev-login">
+      <button id="loginDev">Entrar como Desenvolvedor</button>
+    </div>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h1>Portal Domis</h1>
+      <p>As últimas notícias e análises sobre economia e investimentos.</p>
+    </section>
+
+    <!-- Mensagem do sistema -->
+    <div id="mensagem" class="mensagem" style="display:none;"></div>
+
+    <!-- Loading indicator -->
+    <div id="loading" class="loading" style="display:none;">
+      <p>Carregando notícias...</p>
+    </div>
+
+    <!-- Área desenvolvedor -->
+    <section class="crud" id="areaDev" style="display:none;">
+      <h2>Área de Desenvolvedores</h2>
+      <form id="formNoticia">
+        <input type="text" id="titulo" placeholder="Título da notícia" required>
+        <textarea id="descricao" placeholder="Descrição da notícia" required></textarea>
+        <input type="text" id="imagem" placeholder="URL da imagem (opcional)">
+        <button type="submit">Salvar</button>
+      </form>
+      <p class="dev-info">Modo desenvolvedor ativo — apenas para edição de notícias.</p>
+    </section>
+
+    <!-- Notícias -->
+    <section class="noticias" id="listaNoticias">
+      <div class="loading-placeholder">
+        <p>Carregando notícias...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Domis — Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../js/noticias.js"></script>
+</body>
+</html>
