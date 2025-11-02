@@ -6,7 +6,7 @@ const mensagem = document.getElementById("mensagem");
 const loading = document.getElementById("loading");
 
 // URL da API de Notícias - USE A URL QUE FUNCIONOU
-const API_URL = 'https://9c4ad935-4bb2-414d-b551-1e323f91d3cc-00-3lp43t6jmut6i.worf.replit.dev';
+const API_URL = 'https://76f08b4f-e4c1-4e2c-9b33-819d2a22a673-00-12vpqmhqy112a.worf.replit.dev/';
 
 const IMAGEM_PADRAO = "https://via.placeholder.com/400x180?text=Mercado+Financeiro";
 let noticias = [];
